@@ -12,6 +12,7 @@ profile:
 
 news: true  # includes a list of news items
 experience: true # includes a list of experience
+education: true # includes a list of education
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---

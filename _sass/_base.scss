@@ -20,10 +20,10 @@ table {
     font-size: 1rem;
   }
 }
-.m-2 .border, .experience .col.border-right {
+.m-2 .border, .col.border-right {
   border-color: var(--global-theme-color) !important;
 }
-.experience .m-2 .border.exp-fill {
+.m-2 .border.exp-fill {
   background-color: var(--global-theme-color) !important;
 }
 .d-sm-flex {
@@ -48,10 +48,11 @@ table {
     }
   }
 }
-.exp-company {
+.exp-company, .exp-college {
   font-weight: 400 !important;
-  text-transform: none !important;
+  text-transform: uppercase;
 }
+
 .exp-meta {
   font-size: .8rem;
 }

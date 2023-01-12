@@ -39,11 +39,6 @@ layout: default
           <div class="clearfix">
             {{ content }}
           </div>
-          <!-- Experience -->
-        {% if page.experience %}
-          <h2>Industry Experience</h2>
-          {% include experience.html %}
-        {% endif %}
 
           <!-- News -->
           {% if page.news -%}
@@ -51,9 +46,21 @@ layout: default
             {%- include news.html %}
           {%- endif %}
 
+          <!-- Education -->
+          {% if page.education %}
+            <h3>Education</h3>
+            {% include education.html %}
+          {% endif %}
+          
+          <!-- Experience -->
+          {% if page.experience %}
+            <h3>Industry Experience</h3>
+            {% include experience.html %}
+          {% endif %}
+
           <!-- Selected papers -->
           {% if page.selected_papers -%}
-            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">selected publications</a></h2>
+            <h3><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">selected publications</a></h3>
             {%- include selected_papers.html %}
           {%- endif %}
 

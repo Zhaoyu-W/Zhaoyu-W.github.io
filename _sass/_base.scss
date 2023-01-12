@@ -20,6 +20,41 @@ table {
     font-size: 1rem;
   }
 }
+.m-2 .border, .experience .col.border-right {
+  border-color: var(--global-theme-color) !important;
+}
+.experience .m-2 .border.exp-fill {
+  background-color: var(--global-theme-color) !important;
+}
+.d-sm-flex {
+  color: var(--global-theme-color);
+}
+.middot-divider{
+  padding-right:.45em;
+  padding-left:.45em;
+  font-size:15px
+}
+.middot-divider::after{
+  content:'\00B7'
+}
+.section-subheading {
+  font-size: .9rem;
+  font-weight: 700;
+  line-height: 1.5;
+  a {
+    color: var(--global-theme-color);
+    &:hover {
+      color: var(--global-theme-color);
+    }
+  }
+}
+.exp-company {
+  font-weight: 400 !important;
+  text-transform: none !important;
+}
+.exp-meta {
+  font-size: .8rem;
+}
 
 a, table.table a {
   color: var(--global-theme-color);

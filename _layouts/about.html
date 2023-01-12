@@ -39,6 +39,11 @@ layout: default
           <div class="clearfix">
             {{ content }}
           </div>
+          <!-- Experience -->
+        {% if page.experience %}
+          <h2>Industry Experience</h2>
+          {% include experience.html %}
+        {% endif %}
 
           <!-- News -->
           {% if page.news -%}
